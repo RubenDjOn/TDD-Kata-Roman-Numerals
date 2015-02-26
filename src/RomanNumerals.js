@@ -3,12 +3,11 @@ function RomanNumerals() {
 
 RomanNumerals.prototype.convert = function (n) {
 	var converted = '';
-	if (n == 1) {
-		converted = 'I';
+
+	for (var counter = 1; counter <= n; counter++) {
+		converted += 'I';
 	}
-	else if (n==2){
-		converted = 'II';
-	}
+
 	return converted;
 };
 /*
