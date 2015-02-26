@@ -17,8 +17,13 @@ describe("RomanNumerals", function() {
     expect(romanNumerals.convert(3)).toEqual('III');
   });
 
-  it("should return IV whe 4 is passed", function(){
-    expect(romanNumerals.convert(4).toEqual('IV'));
+  it("should return IV when 4 is passed", function(){
+    expect(romanNumerals.convert(4)).toEqual('IV');
+  });
+
+  it("should return V when 5 is passed", function(){
+
+    expect(romanNumerals.convert(5)).toEqual('V');
   });
   /*
   it("should return number 1", function() {    

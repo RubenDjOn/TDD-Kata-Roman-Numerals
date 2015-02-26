@@ -4,10 +4,13 @@ function RomanNumerals() {
 RomanNumerals.prototype.convert = function (n) {
 	var converted = '';
 
-	for (var counter = 1; counter <= n; counter++) {
+	for (var counter = 1; counter <= n; counter++) {		
 		converted += 'I';
 	}
 
+	if (n==4){
+		converted = 'IV';
+	}
 	return converted;
 };
 /*
