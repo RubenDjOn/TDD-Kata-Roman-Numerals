@@ -6,7 +6,6 @@ RomanNumerals.prototype.convert = function (n) {
 	
 	if (n <= 3){
 		converted = Array(n+1).join('I');
-		console.log('n='+n+' converted='+converted)
 	}
 	else if (n==4){ 
 		converted = 'IV';
@@ -20,9 +19,15 @@ RomanNumerals.prototype.convert = function (n) {
 	else if(n==9){
 		converted = 'IX';
 	}
+
+	else if (n == 10) {
+		converted = 'X';
+	}
+
 	
 	return converted;
 };
+
 /*
 FizzBuzz.prototype.number = function(n) {
  	return 1;
