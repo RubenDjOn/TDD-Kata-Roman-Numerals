@@ -11,6 +11,9 @@ RomanNumerals.prototype.convert = function (n) {
 	if (n==4){
 		converted = 'IV';
 	}
+	else if (n == 5){
+		converted = 'V'
+	}
 	return converted;
 };
 /*
