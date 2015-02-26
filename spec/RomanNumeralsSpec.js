@@ -12,6 +12,10 @@ describe("RomanNumerals", function() {
   it("should return II when 2 is passed", function(){
     expect(romanNumerals.convert(2)).toEqual ('II');
   });
+
+  it("should return III when 3 is passed", function(){
+    expect(romanNumerals.convert(3)).toEqual('III');
+  });
   /*
   it("should return number 1", function() {    
     expect(fizzBuzz.number(2)).toEqual(2);

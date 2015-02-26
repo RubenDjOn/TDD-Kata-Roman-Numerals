@@ -2,9 +2,14 @@ function RomanNumerals() {
 }
 
 RomanNumerals.prototype.convert = function (n) {
+	var converted = '';
 	if (n == 1) {
-		return 'I';
+		converted = 'I';
 	}
+	else if (n==2){
+		converted = 'II';
+	}
+	return converted;
 };
 /*
 FizzBuzz.prototype.number = function(n) {
