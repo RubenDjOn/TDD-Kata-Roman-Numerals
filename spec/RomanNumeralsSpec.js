@@ -37,6 +37,10 @@ describe("RomanNumerals", function() {
   {
     expect(romanNumerals.convert(9)).toEqual('IX');
   });
+
+  it("should return X when 10 is passed", function(){
+    expect(romanNumerals.convert(10)).toEqual('X');
+  });
   /*
   it("should return number 1", function() {    
     expect(fizzBuzz.number(2)).toEqual(2);

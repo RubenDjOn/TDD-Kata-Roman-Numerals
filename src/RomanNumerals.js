@@ -3,16 +3,22 @@ function RomanNumerals() {
 
 RomanNumerals.prototype.convert = function (n) {
 	var converted = '';
-
-	for (var counter = 1; counter <= n; counter++) {		
-		converted += 'I';
-		switch (counter) {
-			case 4: converted = 'IV';
-				break;
-			case 5: converted = 'V';
-				break;
-		}
-		
+	
+	if (n <= 3){
+		converted = Array(n+1).join('I');
+		console.log('n='+n+' converted='+converted)
+	}
+	else if (n==4){ 
+		converted = 'IV';
+	}
+	else if(n==5){
+		converted = 'V';
+	}
+	else if(n>5&&n<9){
+		converted = 'V' + Array(n-4).join('I');
+	}
+	else if(n==9){
+		converted = 'IX';
 	}
 	
 	return converted;
