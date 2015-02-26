@@ -30,7 +30,12 @@ describe("RomanNumerals", function() {
     expect(romanNumerals.convert(6)).toEqual('VI');
   });
   it("should return VII when 7 is passed", function(){
-    expect(romanNumerals.convert(7)).toEqual(7);
+    expect(romanNumerals.convert(7)).toEqual('VII');
+  });
+
+  it ("should return IX when 9 is passed", function()
+  {
+    expect(romanNumerals.convert(9)).toEqual('IX');
   });
   /*
   it("should return number 1", function() {    
