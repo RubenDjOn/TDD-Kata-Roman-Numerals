@@ -7,13 +7,17 @@ RomanNumerals.prototype.convert = function (n) {
 	for (var counter = 1; counter <= n; counter++) {		
 		converted += 'I';
 	}
-
-	if (n==4){
-		converted = 'IV';
-	}
-	else if (n == 5){
-		converted = 'V'
-	}
+	switch(n){
+		case 4:
+			converted = 'IV';
+			break;
+		case 5:
+			converted = 'V';
+			break;
+		case 6:
+			converted = 'VI';
+			break;		
+	}	
 	return converted;
 };
 /*

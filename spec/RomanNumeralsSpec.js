@@ -29,6 +29,9 @@ describe("RomanNumerals", function() {
   it("should return VI when 6 is passed", function(){
     expect(romanNumerals.convert(6)).toEqual('VI');
   });
+  it("should return VII when 7 is passed", function(){
+    expect(romanNumerals.convert(7)).toEqual(7);
+  });
   /*
   it("should return number 1", function() {    
     expect(fizzBuzz.number(2)).toEqual(2);
