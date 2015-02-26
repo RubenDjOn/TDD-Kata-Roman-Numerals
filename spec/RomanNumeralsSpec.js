@@ -5,6 +5,9 @@ describe("RomanNumerals", function() {
     romanNumerals = new RomanNumerals();
   });
 
+  it("should return I when 1 is passed", function(){
+    expect(romanNumerals.convert(1),'I');
+  });
   /*
   it("should return number 1", function() {    
     expect(fizzBuzz.number(2)).toEqual(2);
