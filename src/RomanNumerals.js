@@ -1,6 +1,11 @@
 function RomanNumerals() {
 }
 
+RomanNumerals.prototype.convert = function (n) {
+	if (n == 1) {
+		return 'I';
+	}
+};
 /*
 FizzBuzz.prototype.number = function(n) {
  	return 1;

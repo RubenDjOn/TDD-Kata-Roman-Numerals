@@ -6,7 +6,11 @@ describe("RomanNumerals", function() {
   });
 
   it("should return I when 1 is passed", function(){
-    expect(romanNumerals.convert(1),'I');
+    expect(romanNumerals.convert(1)).toEqual('I');
+  });
+
+  it("should return II when 2 is passed", function(){
+    expect(romanNumerals.convert(2)).toEqual ('II');
   });
   /*
   it("should return number 1", function() {    
