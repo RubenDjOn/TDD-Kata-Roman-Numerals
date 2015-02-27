@@ -1,5 +1,5 @@
 describe("RomanNumerals", function() {  
-  var fizzBuzz;
+
 
   beforeEach(function() {    
     romanNumerals = new RomanNumerals();
@@ -41,6 +41,10 @@ describe("RomanNumerals", function() {
   it("should return X when 10 is passed", function(){
     expect(romanNumerals.convert(10)).toEqual('X');
   });
+
+  it ("should return XL when 40 is passed", function(){
+    expect(romanNumerals.convert(40)).toEqual('XL');
+  })
   /*
   it("should return number 1", function() {    
     expect(fizzBuzz.number(2)).toEqual(2);
